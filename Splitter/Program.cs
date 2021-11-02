@@ -16,7 +16,7 @@ namespace Splitter
             string fileName = page + "_" + System.IO.Path.GetRandomFileName()  + ".csv";
             foreach (string line in lines)
             {
-                if (cont == qtdLinhas)
+                if (cont >= qtdLinhas)
                 {
                     page++;
                     fileName = page + "_" + System.IO.Path.GetRandomFileName() + ".csv";
